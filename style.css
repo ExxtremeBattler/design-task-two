@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; 
+    font-family: 'Arimo', sans-serif;
+
+  }
+  
+  /* Tile size and colour */
+  .white-square {
+    width:510px;
+    height: 540px;
+    background-color: #ffffff;
+  }
+
+  /* Targets div containing product name */
+  .product-name{
+    position: relative;
+    bottom: 57px;
+    left: 20px;
+    font-size: large;
+  }
+
+  /* Targets div containing product make */
+  .product-make{
+    position: relative;
+    bottom: 15px;
+  }
+
+  /* Targets area containing main and thumbnail images */
+  .image-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 55px;
+    max-height: 350px;
+  }
+  
+  /* Specifically targets main image */
+  .main-image {
+    width: 385px;
+    transition: max-height 0.3s ease;
+    border-style: solid;
+    
+  }
+
+  /* Targets the container for thumbnails on the side  */
+  .thumbnail-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: 10px; 
+  }
+
+  /* Specifically targets each thumbnail image on the side */
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px; /* Adds margin between thumbnails */
+    border-style: solid ; /* Added to make the images more distinguishable against the background */
+  }
+  
+  
+  .thumbnail:hover {
+    transform: scale(1.1); /* Causes thumbnails to enlarge slightly upon hover */
+  }
+
+  /* Targets Div related to stock status */
+  .stock-status {
+    background-color: rgb(102, 102, 102);
+    position: relative;
+    bottom: 40px;
+    height: 35px;
+  }
+
+  /* Targets <p> tag containing stock information */
+  .stock-text{
+    color: rgba(255, 255, 255, 0.812);
+    position: relative;
+    bottom: 27px;
+    left: 20px;
+  }
+
+  /* Font Awesome location icon */
+  .fa-location-dot{
+    position: relative;
+    top: 9px;
+  }
+
+  /* Targets price */
+  .price {
+    color: rgba(83, 87, 169, 0.855);
+    position: relative;
+    left: 72%;
+
+  }
+
+  /* Targets container for fuel type, manufacture date etc. */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px ;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+  }
+
+
+  
